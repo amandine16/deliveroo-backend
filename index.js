@@ -19,6 +19,6 @@ app.all("*", () => {
   res.status(404).json("Road not found");
 });
 
-app.listen("3001", () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started");
 });
